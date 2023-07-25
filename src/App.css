@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Geologica&display=swap");
+
 .App {
   text-align: center;
 }
@@ -61,6 +63,14 @@ nav {
   cursor: pointer;
 }
 
+.nav-links > a:hover {
+  font-weight: 600;
+  border-width: 2px;
+}
+
+.nav-links > a:active {
+  color: chocolate;
+}
 .search-bar {
   display: flex;
   align-items: center;
@@ -109,6 +119,11 @@ nav {
   border-radius: 2rem;
 }
 
+.card-link {
+  text-decoration: none;
+  color: #222;
+}
+
 .res-details {
   display: flex;
   justify-content: space-between;
@@ -140,4 +155,47 @@ footer {
   text-align: center;
   font-size: 14px;
   margin-top: 15px;
+}
+
+.resPageDetails {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Geologica", sans-serif;
+}
+.resPageImg {
+  height: 300px;
+  width: 450px;
+  border-radius: 2rem;
+  margin: 25px;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.21);
+}
+
+.resPageImg:hover {
+  transform: scale(1.03);
+  transition: 400ms;
+}
+
+.resPageInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about {
+  padding: 15px;
+  font-family: "Geologica", sans-serif;
+}
+.resPageInfo > h2 {
+  padding: 5px 15px;
+  margin: 5px 15px;
+}
+
+.contact {
+  padding: 25px;
+}
+
+.contact a {
+  padding: 0 5px;
 }

@@ -1,6 +1,7 @@
 import RestauarantCard from "./RestaurantCard";
 import { useState } from "react";
 import { restaurants_data } from "../common/mock_data";
+import { Link } from "react-router-dom";
 
 function Body() {
   const [searchText, setSearchText] = useState("");
@@ -33,10 +34,16 @@ function Body() {
       <div className="card-container">
         {filteredRestaurants.map((restaurant) => {
           return (
-            <RestauarantCard
+            <Link
               key={restaurant.id}
-              restaurant_details={restaurant}
-            />
+              to={`/restaurants/${restaurant.id}`}
+              className="card-link"
+            >
+              <RestauarantCard
+                key={restaurant.id}
+                restaurant_details={restaurant}
+              />
+            </Link>
           );
         })}
       </div>

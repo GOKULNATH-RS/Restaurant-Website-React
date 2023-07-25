@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Header() {
   return (
     <nav className="navbar">
@@ -8,15 +10,18 @@ function Header() {
         ></img>
       </div>
       <div className="nav-items nav-links">
-        <a className="nav-links" href="">
+        <Link className="nav-links" to="/">
           Home
-        </a>
-        <a className="nav-links" href="">
+        </Link>
+        <Link className="nav-links" to="/orders">
           Orders
-        </a>
-        <a className="nav-links" href="">
-          Coupons
-        </a>
+        </Link>
+        <Link className="nav-links" to="/about">
+          About
+        </Link>
+        <Link className="nav-links" to="/contact">
+          Contact
+        </Link>
       </div>
     </nav>
   );
