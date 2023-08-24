@@ -1,6 +1,6 @@
 **--First React Project--**
 
-*Ongoing.*
+*Ongoing..*
 
 **Process..** <br/>
 ` Made cards of restaurant and also added search functionalities using HOOKS` <br/>
